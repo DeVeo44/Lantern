@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  
+  <div id="contact-popup" class="popup">
+    <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <h2>Contactez-nous</h2>
+        <form id="contact-form">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Votre question :</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+</div>
+
+  <body>
+    <header class="primary-header">
+      <nav>
+        <img class="Logo" src="img/Logo.jpg" alt="Logo" />
+
+        <ul>
+          <li>
+            <a href="#">Accueil</a>
+          </li>
+          <li></li>
+          <li>
+            <a href="#renvoi3">les entitées</a>
+          </li>
+          <li>
+            <a href="#renvoi1">Les différents Corps</a>
+          </li>
+          <li>
+            <a href="#renvoi2">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="banner">
+      <div class="banner-overlay">
+        <h1 class="typewriter"></h1>
+      </div>
+    </div>
+    <main>
+      <section id="section-services" class="container">
+        <h2 id="renvoi1">Les différents Corps</h2>
+        <div class="services-container0">
+          <a href="Les corps.html" class="services-link">
+            <div class="services-item0"></div>
+          </a>
+        </div>
+        <div>
+          <h3 id="renvoi3">Les entitées</h3>
+          <div class="services-container0">
+            <a href="Entity.html" class="services-link">
+              <div class="services-item8"></div>
+            </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p id="renvoi2">Contactez-nous :</p>
+      <p>
+        Email : <a href="mailto:contact@exemple.com">contact@exemple.com</a>
+      </p>
+      <p>Téléphone : <a href="tel:+33123456789">+33 1 23 45 67 89</a></p>
+      <div id="renvoi2" class="social-links">
+        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"
+          >Facebook</a
+        >
+        |
+        <a href="https://www.twitter.com" target="_blank" aria-label="Twitter"
+          >Twitter</a
+        >
+        |
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          aria-label="Instagram"
+          >Instagram</a
+        >
+      </div>
+      <p>&copy; 2024 TheLanternCorps. Tous droits réservés.</p>
+    </footer>
+    <script src="ring.js"></script>
+  </body>
+</html>

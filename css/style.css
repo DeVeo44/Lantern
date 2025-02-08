@@ -1,0 +1,458 @@
+/* **********
+********GENERAL******* */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.container {
+  max-width: 1024px;
+  margin: auto;
+}
+/* *****HEADER********* */
+.primary-header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.Logo {
+  width: 50px;
+  height: auto;
+  border-radius: 25px;
+  border: 2px solid #000;
+}
+
+.primary-header {
+  background-color: rgb(65, 172, 11);
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.primary-header ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: end;
+}
+.primary-header a {
+  color: azure;
+  padding: 15px;
+  display: inline-block;
+  transition: 0.2s;
+}
+.primary-header a:hover {
+  background-color: cornflowerblue;
+}
+.primary-header a:active {
+  background-color: darkcyan;
+}
+/* *******BANNER********* */
+.banner {
+  background-image: url(../img/corps.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 60vh;
+}
+.banner-overlay {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.banner h1 {
+  color: aliceblue;
+  font-size: 4rem;
+  line-height: calc(20px + 20vh);
+  text-shadow: 0 0 5px #40ff00, 0 0 15px #40ff00, 0 0 20px #ffa500,
+    0 0 40px #40ff00, 0 0 60px #40ff00, 0 0 10px #40ff00, 0 0 98px #40ff00;
+  color: #ffffff;
+  font-family: "verdana", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+/* **********SECTIONSERVICE********** */
+#section-services {
+  text-align: center;
+}
+.services-container0 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  gap: 20px;
+  align-content: center;
+}
+.services-container1 {
+  display: flex;
+  gap: 20px;
+}
+.services-item0 {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+  margin: 15px;
+  background-image: url(../img/banner2.png);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 450px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  display: block;
+  text-decoration: none;
+}
+.services-item0:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 54px 55px,
+    rgba(0, 0, 0, 0.25) 0px -12px 30px, rgba(0, 0, 0, 0.25) 0px 4px 6px,
+    rgba(0, 0, 0, 0.37) 0px 12px 13px, rgba(0, 0, 0, 0.19) 0px -3px 5px;
+}
+
+.services-link:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.services-item1 {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+  margin: 15px;
+  background-image: url(../img/Box1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 300px;
+}
+
+.services-item2 {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+  margin: 15px;
+  background-image: url(../img/Box3.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 300px;
+}
+.services-item3 {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+  margin: 15px;
+  background-image: url(../img/box2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 300px;
+}
+.services-container2 {
+  display: flex;
+  gap: 20px;
+}
+.services-item {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+  margin: 15px;
+  height: 250px;
+  width: 300px;
+  margin-bottom: 150px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.services-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.services-text {
+  text-shadow: 0 0 5px #40ff00, 0 0 15px #40ff00, 0 0 20px #ffa500,
+    0 0 40px #40ff00, 0 0 60px #40ff00, 0 0 10px #40ff00, 0 0 98px #40ff00;
+  color: #fff6a9;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+.services-text2 {
+  text-shadow: 0 0 5px #f0039d, 0 0 15px #ff00a6, 0 0 20px #ff009d,
+    0 0 40px #ff00c3, 0 0 60px #ff00c3, 0 0 10px #ff00b3, 0 0 98px #40ff00;
+  color: #fff6a9;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+.services-text3 {
+  text-shadow: 0 0 5px #000000, 0 0 15px #5d5d28, 0 0 20px #eeff00,
+    0 0 40px #f6ff00, 0 0 60px #fff700, 0 0 10px #ffff00, 0 0 98px #40ff00;
+  color: #fff6a9;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+.services-item4 {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+  margin: 15px;
+  background-image: url(../img/box4.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 300px;
+}
+.services-item5 {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+  margin: 15px;
+  background-image: url(../img/box5.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 300px;
+}
+.services-item6 {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+  margin: 15px;
+  background-image: url(../img/box6.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 300px;
+}
+.services-container3 {
+  display: flex;
+  gap: 20px;
+}
+.services-text4 {
+  text-shadow: 0 0 5px #d11111, 0 0 15px #ee1414, 0 0 20px #ee1010,
+    0 0 40px #ef0404, 0 0 60px #d70303, 0 0 10px #ca0303, 0 0 98px #40ff00;
+  color: #f9a0a0;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+.services-text5 {
+  text-shadow: 0 0 5px #34c0f4, 0 0 15px #0c77f2, 0 0 20px #1086ee,
+    0 0 40px #0489ef, 0 0 60px #0390d7, 0 0 10px #0395ca, 0 0 98px #40ff00;
+  color: #cdf1fe;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+.services-text6 {
+  text-shadow: 0 0 5px #ee7c20, 0 0 15px #f77800, 0 0 20px #eea410,
+    0 0 40px #ef9d04, 0 0 60px #d79403, 0 0 10px #ca7003, 0 0 98px #ff8400;
+  color: #f4d790;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+.services-item8 {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+  margin: 15px;
+  background-image: url(../img/Entity.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 450px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.services-item8:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 54px 55px,
+    rgba(0, 0, 0, 0.25) 0px -12px 30px, rgba(0, 0, 0, 0.25) 0px 4px 6px,
+    rgba(0, 0, 0, 0.37) 0px 12px 13px, rgba(0, 0, 0, 0.19) 0px -3px 5px;
+}
+.services-item9 {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+  margin: 15px;
+  background-image: url(../img/ion.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 300px;
+}
+.services-item10 {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+  margin: 15px;
+  background-image: url(../img/Predator.png);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 300px;
+}
+.services-item11 {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+  margin: 15px;
+  background-image: url(../img/Parallax.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 300px;
+}
+.services-item12 {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+  margin: 15px;
+  background-image: url(../img/Boucher.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 300px;
+}
+.services-item13 {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+  margin: 15px;
+  background-image: url(../img/Adara.png);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 300px;
+}
+.services-item14 {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+  margin: 15px;
+  background-image: url(../img/Ophidian.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 300px;
+}
+/* Style pour le footer */
+footer {
+  background-color: rgb(65, 172, 11);
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+footer a {
+  color: #37454d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Réseaux sociaux */
+.social-links a {
+  margin: 0 10px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #133b4f;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .services-container0 {
+    flex-direction: column;
+  }
+}
+/*Pop Up*/
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.popup-content {
+  position: relative;
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.popup textarea {
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+}
